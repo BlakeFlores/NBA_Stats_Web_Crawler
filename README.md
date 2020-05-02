@@ -34,3 +34,21 @@ Once setup is complete use the terminal to navigate to the spiders directory. Th
 The running program should open a chrome window, and open each player stats page in a new tab before scraping the data and closing the tab. There are delays built in intentionally to prevent flooding their servers with requests. 
 
 Player stats will be recorded in the "output_file.txt" file, under the spiders folder.
+
+A video of this web crawler running can be found at: 
+
+https://www.youtube.com/watch?v=7DEtFSkUPEM
+
+
+# FAQ
+
+Why is this so complicated? Can't one of these three tools (selenium, bs4, scrapy) be enough?
+>This started as a scrapy crawler, and had to adopt quite a few changes before useful data could be extracted. The problems I ran into mostly involved javascript. If an actual browswer like  Chrome doesn't accees the webpage, the NBA sites' javascript script will not populate their stats tables with anything but dummy filler values. So, franken-spider was formed to force render the js elements so I can use bs4 to pull the rendered html and scrape useful data.
+
+Isn't there an API for this? Wouldn't that be easier?
+>Yes, the NBA has a well developed API for retrieving stats, but this was more about scraping data that was hard to get than the data itself. I don't really care all that much about the NBA, but this stat collection was fun!
+
+
+Help! I can't get this to run!/I don't understand something
+>Feel free to email me at Blake.I.Flores@gmail.com
+
