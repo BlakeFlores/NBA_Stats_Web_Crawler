@@ -1,11 +1,11 @@
-## nba_spider
+# nba_spider
 
 A webcrawler which crawls stats.nba.com for every active players traditional split data.
 
 This crawler creates an automated instance of Chrome, which follows links from stats.nba.com/players/list/ to each individual players traditional split page. From there it saves the data from the most recent season they've participated in, and stores it in a text file named "output.txt". Each row is denoted by player name.
 
 
-#Requirements:
+# Requirements:
 
 This web cralwer uses several python libraries together to function properly.
 > Scrapy  (scrapy.org)
@@ -18,7 +18,7 @@ There is a chrome webdriver included in the source files under the /spiders fold
 
 This was developed using a python 3.7 venv, and has not been tested using other python versions.
 
-#Setup: 
+# Setup: 
 
 Quick and Easy/Already have Scrapy:
 If you already have scrapy, you can create a new project using "scrapy startproject projectname" in your target directory. Once the project has been initialized, nba_spider.py and a chromedriver should be placed in the spiders directory.
@@ -26,5 +26,7 @@ If you already have scrapy, you can create a new project using "scrapy startproj
 Full setup:
 First, clone the repository. Then, open it using your desired IDE, assuming it supports python vEnv. Install the plugins required (either manually or using your IDE).
 
-Running:
+# Running:
 Once setup is complete use the terminal to navigate to the spiders directory. Then, run the command "scrapy runspider nba_stats.py" if you built the full project, or "scrapy crawl nba_stats.py" if you simply cloned the repository.
+
+The running program should open a chrome window, and open each player stats page in a new tab before scraping the data and closing the tab. There are delays built in intentionally to prevent flooding their servers with requests.
