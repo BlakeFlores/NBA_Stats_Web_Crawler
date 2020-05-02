@@ -9,7 +9,9 @@ Requirements:
 
 This web cralwer uses several python libraries together to function properly.
 > Scrapy  (scrapy.org)
+
 > Selenium   https://pypi.org/project/selenium/)
+
 > Beautifulsoup  (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 There is a chrome webdriver included in the source files under the /spiders folder, which will be used to create the automated chrome instance. This may seem excessive, but I've found it to be the easiest way to force javascript populated tables to render properly.
