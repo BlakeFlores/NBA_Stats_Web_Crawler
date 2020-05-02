@@ -21,9 +21,11 @@ This was developed using a python 3.7 venv, and has not been tested using other 
 # Setup: 
 
 Quick and Easy/Already have Scrapy:
+
 If you already have scrapy, you can create a new project using "scrapy startproject projectname" in your target directory. Once the project has been initialized, nba_spider.py and a chromedriver should be placed in the spiders directory.
 
 Full setup:
+
 First, clone the repository. Then, open it using your desired IDE, assuming it supports python vEnv. Install the plugins required (either manually or using your IDE).
 
 # Running:
