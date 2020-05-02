@@ -31,4 +31,6 @@ First, clone the repository. Then, open it using your desired IDE, assuming it s
 # Running:
 Once setup is complete use the terminal to navigate to the spiders directory. Then, run the command "scrapy runspider nba_stats.py" if you built the full project, or "scrapy crawl nba_stats.py" if you simply cloned the repository.
 
-The running program should open a chrome window, and open each player stats page in a new tab before scraping the data and closing the tab. There are delays built in intentionally to prevent flooding their servers with requests.
+The running program should open a chrome window, and open each player stats page in a new tab before scraping the data and closing the tab. There are delays built in intentionally to prevent flooding their servers with requests. 
+
+Player stats will be recorded in the "output_file.txt" file, under the spiders folder.
